@@ -1,0 +1,35 @@
+\input{../common/head_ua.tex}
+
+\begin{document}
+
+\import{title/}{title.tex}
+
+\clearpage
+\pagenumbering{gobble}
+\import{abstract/}{main.tex}
+
+\tableofcontents
+
+\clearpage
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\setcounter{page}{8}
+
+\clearpage
+
+\import{preface/}{preface.tex}
+\import{main/}{problem.tex}
+\import{main/}{least-squares.tex}
+\import{main/}{icp.tex}
+
+\import{conclusion/}{conclusion.tex}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Перелік посилань}
+\renewcommand\bibname{Перелік посилань}
+\bibliography{bibliography.bib}
+
+\import{appendices/}{main.tex}
+
+\end{document}
